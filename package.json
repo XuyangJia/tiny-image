@@ -1,0 +1,19 @@
+{
+  "name": "tiny-image",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js",
+    "fix": "standard --fix"
+  },
+  "repository": "git@github.com:XuyangJia/tiny-image.git",
+  "author": "Xuyang Jia <jiaxuyang@outlook.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "imagemin": "^7.0.0",
+    "imagemin-jpegtran": "^6.0.0",
+    "imagemin-pngquant": "^8.0.0"
+  }
+}
