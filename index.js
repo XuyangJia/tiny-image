@@ -1,6 +1,6 @@
 const path = require('path')
 const getImages = require('./lib/getImages')
-const root = 'E:\\meng52\\Client\\release\\web67' // 图片所在的路径
+const root = 'E:\\meng52\\Client\\release\\web67' // 发布目录所在的路径
 const compressImage = require('./lib/compressImage')
 let excludeFiles = [
   'res\\atlas\\comp.png',
@@ -40,7 +40,7 @@ specialMap.forEach(data => {
 
 imgsData.forEach(fp => {
   const special = specialMap.find(data => fp.includes(data.path))
-  const quality = special ? special.quality : defaultQuality  
+  const quality = special ? special.quality : defaultQuality
   fp = fp.replace(/\\/g, '/')
   compressImage(fp, quality).then(console.log, console.error)
 })
