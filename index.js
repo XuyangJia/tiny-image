@@ -1,7 +1,7 @@
 const path = require('path')
 const getImages = require('./lib/getImages')
-const root = 'E:\\meng52\\Client\\release\\web67' // 发布目录所在的路径
 const compressImage = require('./lib/compressImage')
+const root = 'E:\\meng52\\Client\\release\\web67' // 发布目录所在的路径
 let excludeFiles = [
   'res\\atlas\\comp.png',
   'res\\atlas\\ui.png',
